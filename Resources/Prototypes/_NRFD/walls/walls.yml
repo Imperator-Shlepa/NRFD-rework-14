@@ -1,0 +1,80 @@
+- type: entity
+  parent: NRFDBaseWall
+  id: NRFDWallBrick
+  name: Кирпичная стена
+  description: Держит зеков внутри, а волю снаружи
+  components:
+  - type: Sprite
+    sprite: _NRFD/walls/brick.rsi
+  - type: Icon
+    sprite: _NRFD/walls/brick.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Girder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: brick
+
+- type: entity
+  parent: NRFDBaseWall
+  id: NRFDWallBrick1
+  name: Кирпичная стена
+  description: Держит зеков внутри, а волю снаружи
+  components:
+  - type: Sprite
+    sprite: _NRFD/walls/brick1.rsi
+  - type: Icon
+    sprite: _NRFD/walls/brick1.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Girder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: brick
+
+- type: entity
+  parent: NRFDBaseWall
+  id: NRFDWallWood
+  name: Кирпичная стена
+  description: Держит зеков внутри, а волю снаружи
+  components:
+  - type: Sprite
+    sprite: _NRFD/walls/wood.rsi
+  - type: Icon
+    sprite: _NRFD/walls/wood.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Girder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: brick
