@@ -23,7 +23,7 @@
     - Wall
   - type: IsRoof
   - type: Sprite
-    drawdepth: Walls
+    drawdepth: Mobs
   - type: Icon
     state: full
   - type: PlacementReplacement
@@ -42,7 +42,7 @@
         mask:
         - FullTileMask
         layer:
-        - GlassLayer
+        - WallLayer
         density: 1000
   - type: Airtight
   - type: StaticPrice
